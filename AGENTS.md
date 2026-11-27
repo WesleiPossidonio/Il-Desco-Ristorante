@@ -10,7 +10,7 @@
 - Conteúdo editorial em content/landing.json; conteúdo essencial presente no HTML estático entregue.
 - Adicionar arquivos somente quando tiverem função real; build pequeno e reproduzível com lockfile.
 ## Design e conteúdo
-- Seguir a referência aprovada sem redesenhar. Se inacessível, solicitar captura ou arquivos antes da composição visual.
+- Captura recebida em 27/11/2026. Responsável autorizou refinar o layout com direção UI/UX minimalista, mantendo identidade editorial e escopo.
 - Sem header convencional nem navegação sticky. Hero: “Il Natale si vive insieme.”
 - Cinco áreas: Hero, apresentação, dois menus oficiais, restaurante e CTA final verde profundo.
 - Usar a imagem natalina aprovada no Hero, identificando sua natureza conceitual quando necessário; fotos oficiais para representar o espaço físico.
@@ -27,7 +27,7 @@
 - Não inventar políticas ou dados legais; confirmar cobertura iubenda no subdomínio.
 ## Qualidade e entrega
 - Mobile-first; HTML acessível, foco visível, headings corretos, contraste e áreas de toque.
-- Hero sem lazy loading; imagens responsivas WebP com dimensões. Lazy loading abaixo da dobra.
+- Hero sem lazy loading e imagens com dimensões. Responsável autorizou formatos originais nesta etapa; conversão posterior. Lazy loading abaixo da dobra.
 - Movimento discreto com transform/opacity e prefers-reduced-motion; conteúdo visível sem JS.
 - SEO italiano, metadados, OG e JSON-LD apenas com fatos verificados; prévias sem indexação.
 - Canonical de produção somente após validar URL final. Nenhum segredo em arquivos públicos.

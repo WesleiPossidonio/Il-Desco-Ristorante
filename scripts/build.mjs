@@ -1,0 +1,13 @@
+import { readFile, mkdir, cp, writeFile } from 'node:fs/promises';
+const c = JSON.parse(await readFile('content/landing.json', 'utf8'));
+const esc = s => String(s).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const image = (path, alt, hero=false) => path ? `<img src="${esc(path)}" alt="${esc(alt)}" width="1672" height="941" ${hero ? 'fetchpriority="high"' : 'loading="lazy"'} decoding="async">` : '';
+const contact = c.whatsappNumber ? `<a class="button" href="https://wa.me/${esc(c.whatsappNumber)}?text=${encodeURIComponent(c.whatsappMessage)}">Richiedi disponibilità</a>` : '<p class="availability">Il contatto WhatsApp sarà disponibile a breve.</p>';
+let html = await readFile('templates/landing.html', 'utf8');
+const values = {...c, title:esc(c.title), description:esc(c.description), heroText:esc(c.heroText), presentationText:esc(c.presentationText), contact, hero:image(c.heroImage,'',true), restaurant:image(c.restaurantImage,'Gli interni del ristorante Il Desco'), menus:c.menus.length ? c.menus.map(m=>`<article class="menu-card"><h3>${esc(m.name)}</h3><div class="menu-actions"><a href="${esc(m.pdf)}" target="_blank" rel="noopener">Visualizza il menu</a><a href="${esc(m.pdf)}" download>Scarica PDF</a></div></article>`).join('') : '<div class="menu-pending"><p>Le proposte di Natale stanno arrivando.</p><span>I menu ufficiali saranno disponibili qui, da consultare e scaricare.</span></div>'};
+html = html.replace(/\{\{(\w+)\}\}/g, (_, key) => values[key] ?? '');
+await mkdir('dist/assets', {recursive:true});
+await cp('public', 'dist', {recursive:true});
+await writeFile('dist/index.html',html);
+await writeFile('dist/robots.txt','User-agent: *\nDisallow: /\n');
+console.log('Static preview built; unconfirmed contact and menus are not rendered as links.');
