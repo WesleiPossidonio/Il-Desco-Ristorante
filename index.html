@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#171b17" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="description" content="La pagina dedicata alle cene aziendali di Natale de Il Desco è in preparazione." />
+  <title>Pagina in preparazione | Il Desco Ristorante</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet" />
+  <!-- Tailwind para uma página temporária. Na publicação definitiva, prefira CSS compilado. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{color-scheme:dark;--cream:#faf3e9;--champagne:#c8a975;--soft:#e1d8cc;--forest:#171e19}
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{min-height:100%;margin:0}
+    body{font-family:'DM Sans',Arial,sans-serif;background:var(--forest);color:var(--cream)}
+    .display{font-family:'Italiana',Georgia,serif;font-weight:400}
+    .page{position:relative;min-height:100svh;display:flex;flex-direction:column;isolation:isolate;overflow:hidden}
+    .photo{position:absolute;inset:0;z-index:-3;background:#2b261f url('./assets/natale-restaurant.webp') center 53%/cover no-repeat;transform:scale(1.035);animation:arrive 1800ms ease-out forwards}
+    .shade{position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(9,13,11,.89) 0%,rgba(11,14,12,.75) 35%,rgba(11,14,12,.35) 72%,rgba(11,14,12,.18) 100%),linear-gradient(0deg,rgba(6,10,8,.7),transparent 35%,rgba(6,10,8,.2))}
+    .grain{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.16;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.62' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.32'/%3E%3C/svg%3E")}
+    .wrap{width:min(100% - 100px,1350px);margin-inline:auto}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding-top:41px;gap:20px}
+    .brand{display:inline-flex;flex-direction:column;text-decoration:none;color:var(--cream);line-height:1;align-items:center}
+    .brand-name{font-family:Georgia,serif;font-weight:400;font-size:30px;letter-spacing:.18em;white-space:nowrap}
+    .brand-sub{font-size:9px;font-weight:600;letter-spacing:.46em;margin-top:12px;opacity:.8}
+    .top-location{font-size:11px;letter-spacing:.23em;color:#e5ded5}
+    main{flex:1;display:flex;align-items:center;padding-top:85px;padding-bottom:96px}
+    .content{max-width:700px;animation:rise 750ms .15s both}
+    .eyebrow{display:flex;align-items:center;gap:20px;color:var(--champagne);font-size:11px;font-weight:700;letter-spacing:.29em;text-transform:uppercase}
+    .eyebrow:after{content:'';height:1px;width:68px;background:var(--champagne);display:block}
+    h1{font-size:clamp(60px,7.1vw,112px);line-height:.97;letter-spacing:-.018em;margin:28px 0 26px}
+    h1 em{font-style:normal;color:var(--cream)}
+    .description{max-width:510px;font-size:clamp(15px,1.35vw,18px);line-height:1.75;color:#f0e9df;margin:0}
+    .notice{display:inline-flex;align-items:center;gap:11px;margin-top:30px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#e4d5bc}
+    .dot{width:7px;height:7px;background:var(--champagne);border-radius:999px;box-shadow:0 0 0 4px rgba(200,169,117,.14);animation:pulse 2.8s ease-in-out infinite}
+    .actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:40px}
+    .primary{display:inline-flex;align-items:center;justify-content:center;gap:25px;min-height:54px;padding:0 24px;background:var(--champagne);color:#1d241e;text-decoration:none;font-weight:700;font-size:13px;transition:background .2s,transform .2s}
+    .primary:hover{background:#e0bd83;transform:translateY(-2px)}
+    .primary:focus-visible,.brand:focus-visible{outline:2px solid white;outline-offset:5px}
+    .muted-note{font-size:12px;color:#d6cbbd}
+    footer{border-top:1px solid rgba(250,243,233,.22);display:flex;justify-content:space-between;gap:16px;align-items:center;padding-top:23px;padding-bottom:30px;color:#ddd3c4;font-size:11px;letter-spacing:.045em}
+    footer span:last-child{color:#c9bca9}
+    @keyframes arrive{to{transform:scale(1)}}
+    @keyframes rise{from{opacity:0;transform:translateY(17px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes pulse{50%{box-shadow:0 0 0 8px rgba(200,169,117,.04)}}
+    @media(max-width:700px){.wrap{width:calc(100% - 44px)}.topbar{padding-top:29px}.brand-name{font-size:25px}.brand-sub{font-size:8px;letter-spacing:.35em}.top-location{font-size:9px;letter-spacing:.12em}main{padding:100px 0 95px;align-items:center}.photo{background-position:62% center}.shade{background:linear-gradient(90deg,rgba(8,11,9,.83) 0%,rgba(8,11,9,.65) 62%,rgba(8,11,9,.4) 100%),linear-gradient(0deg,rgba(8,11,9,.68),transparent 60%)}.eyebrow{font-size:9px;letter-spacing:.2em;gap:12px}.eyebrow:after{width:34px}h1{font-size:clamp(59px,12vw,82px);margin:27px 0}.description{font-size:15px;line-height:1.7}.actions{margin-top:31px}.primary{width:100%;gap:18px}.muted-note{display:none}footer{font-size:10px;flex-direction:column;align-items:flex-start;gap:6px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="photo" aria-hidden="true"></div>
+    <div class="shade" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar wrap">
+      <a class="brand" href="https://www.ildescopadova.com/it/home/" aria-label="Il Desco - sito ufficiale">
+        <span class="brand-name">IL DESCO</span><span class="brand-sub">RISTORANTE</span>
+      </a>
+      <span class="top-location">PADOVA · ITALIA</span>
+    </header>
+
+    <main class="wrap">
+      <div class="content">
+        <div class="eyebrow">CENE AZIENDALI · NATALE 2026</div>
+        <h1 class="display">Qualcosa di<br><em>speciale</em><br>sta arrivando.</h1>
+        <p class="description">Stiamo preparando la pagina dedicata alle cene aziendali di Natale. Un'esperienza di gusto, atmosfera e convivialità firmata Il Desco.</p>
+        <div class="notice" role="status"><span class="dot" aria-hidden="true"></span>Pagina in preparazione</div>
+        <div class="actions">
+          <a class="primary" href="https://www.ildescopadova.com/it/home/" rel="noopener noreferrer">Visita il sito ufficiale <span aria-hidden="true">↗</span></a>
+          <span class="muted-note">Ti aspettiamo presto.</span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="wrap"><span>© <span id="year">2026</span> Il Desco Ristorante</span><span>Un Natale da condividere.</span></footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
