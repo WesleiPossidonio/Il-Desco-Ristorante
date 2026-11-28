@@ -10,6 +10,6 @@ Edite textos e configurações em `content/landing.json`, composição em `templ
 
 Hero conceitual aprovado; foto real na seção restaurante. Formatos originais mantidos por orientação do responsável. Otimização/conversão pendente.
 
-WhatsApp e menus oficiais permanecem não configurados: o build mostra avisos em italiano sem inventar links, números, pratos ou preços. Não há rastreadores. A saída permanece noindex e robots bloqueia indexação. Não utilizar como campanha publicada antes de resolver essas pendências.
+WhatsApp configurado a partir do PDF oficial fornecido pelo responsável: +39 351 4376149. Os menus aguardam a definição visual: o arquivo recebido contém três propostas, enquanto o briefing inicial previa duas. O build mantém aviso de menus pendentes sem inventar links, pratos ou preços. Não há rastreadores. A saída permanece noindex e robots bloqueia indexação. Não utilizar como campanha publicada antes de resolver essas pendências.
 
 Consulte `AGENTS.md`, `docs/PREFLIGHT.md` e `docs/DESIGN.md` para regras, evidências e limites da validação.
