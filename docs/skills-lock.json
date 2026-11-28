@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "https://github.com/emilkowalski/skills.git",
+    "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
+  },
+  {
+    "repository": "https://github.com/ghaida/intent.git",
+    "commit": "1bc00bb55609dbecb3b1fe1a7114487dd0abd867"
+  },
+  {
+    "repository": "https://github.com/greensock/gsap-skills.git",
+    "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760"
+  },
+  {
+    "repository": "https://github.com/pbakaus/impeccable.git",
+    "commit": "2fc5e1459efbbf06d92c7306517c286bf12490cf"
+  }
+]

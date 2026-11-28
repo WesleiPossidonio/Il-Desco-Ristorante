@@ -28,6 +28,7 @@ for (const [,value] of contacts) {
 const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([^]*?)<\/script>/)[1]);
 assert.equal(schema['@type'], 'Restaurant');
 assert.equal(schema.name, 'Il Desco Ristorante');
-assert.ok(!/<script[^>]+src=/.test(html), 'No external tracking scripts');
+assert.ok(!/<script[^>]+src="https?:/.test(html), 'No external scripts');
+assert.match(html, /type="module" src="assets\/js\/main.js"/);
 assert.match(await readFile('dist/_headers','utf8'), /X-Robots-Tag: noindex/);
 console.log('PASS: Italian static HTML, local assets, anchors, official menus, WhatsApp links, JSON-LD syntax and preview index blocking.');
