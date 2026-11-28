@@ -11,7 +11,7 @@
 - netlify.toml limitado a deploy-preview: dist/; produção segue a configuração existente.
 
 ## Pendente
-- Prévia no navegador: tentativa anterior falhou por timeout do relay; sem avaliação visual final de responsividade, contraste, teclado ou enquadramento.
+- Validação mobile, teclado e contraste completo ainda pendentes. Prévia Netlify aberta e Hero/cards revisados visualmente em desktop; espaçamento das ações do Hero corrigido.
 - Lighthouse mobile/desktop, Core Web Vitals e validação externa de schema/OG.
 - Conversão de imagens e revisão de pesos de fonte após aprovação visual.
 - Revisão editorial, logo/favicon final e design definitivo do PDF.
