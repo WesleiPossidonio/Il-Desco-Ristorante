@@ -90,8 +90,8 @@ em{font-weight:400}
 .menu-document-actions{display:flex;align-items:center;gap:2rem;flex-wrap:wrap}
 .restaurant{display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:clamp(3rem,8vw,8rem)}
 .restaurant-figure{position:relative}
-.restaurant-photo{overflow:hidden;aspect-ratio:4/5;background:#ded8cb}
-.restaurant-photo img{width:100%;height:112%;object-fit:cover;object-position:60% 50%}
+.restaurant-photo{position:relative;overflow:hidden;aspect-ratio:4/5;background:#ded8cb}
+.restaurant-photo img{position:absolute;inset:-6% 0 auto;width:100%;height:112%;object-fit:cover;object-position:60% 50%}
 .restaurant-figure figcaption{font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;margin-top:1.2rem;color:var(--muted)}
 .restaurant-copy{max-width:26rem;margin:2rem 0 1.5rem;color:var(--muted);line-height:1.85}
 .final{position:relative;overflow:hidden;background:var(--forest);color:var(--cream);text-align:center;padding-block:clamp(6rem,12vw,12rem)}
