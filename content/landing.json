@@ -7,8 +7,40 @@
   "restaurantImage": "assets/images/ristorante-interni.jpg",
   "whatsappNumber": "393514376149",
   "whatsappMessage": "Buongiorno! Vorrei ricevere informazioni sulle cene aziendali di Natale 2026 presso Il Desco. Potreste indicarmi la disponibilità?",
-  "menus": [],
+  "menus": [
+    {
+      "id": "natale-di-mare",
+      "name": "Menu Natale di Mare",
+      "price": "€45,00",
+      "courses": [
+        "Risotto alle mazzancolle e Prosecco con fiocchi di pomodoro essicato",
+        "Moscardino con polenta",
+        "Sorbetto al limone al bicchiere"
+      ]
+    },
+    {
+      "id": "sapori-di-inverno",
+      "name": "Menu Sapori di Inverno",
+      "price": "€45,00",
+      "courses": [
+        "Pacchero con crema di broccolo fiolaro di Creazzo e petto d’anatra affumicato",
+        "Tagliata di manzo con patate al rosmarino",
+        "Cheesecake ai frutti di bosco"
+      ]
+    },
+    {
+      "id": "tradizione-di-natale",
+      "name": "Menu Tradizione di Natale",
+      "price": "€35,00",
+      "courses": [
+        "Maccheroncino all’uovo al ragù d’anatra",
+        "Guancette di maiale brasate con purè di patate",
+        "Tiramisù"
+      ]
+    }
+  ],
   "presentationTitle": "Ci sono momenti<br>da <em>condividere.</em>",
   "presentationText": "La fine dell’anno è un invito a fermarsi. A ritrovarsi intorno a un tavolo e dedicare un momento alle persone con cui condividiamo ogni giorno.",
-  "finalTitle": "Il prossimo brindisi<br><em>è con la tua squadra.</em>"
+  "finalTitle": "Il prossimo brindisi<br><em>è con la tua squadra.</em>",
+  "menuPdf": "assets/pdf/menu-cene-aziendali-2026.pdf"
 }
