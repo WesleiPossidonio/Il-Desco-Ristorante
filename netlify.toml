@@ -1,0 +1,4 @@
+# Only PR previews use the new landing. Production settings remain in Netlify.
+[context.deploy-preview]
+  command = "npm run build && npm run check"
+  publish = "dist"
