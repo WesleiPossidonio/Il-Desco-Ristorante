@@ -33,7 +33,7 @@ em{font-weight:400}
 .hero-shade{background:linear-gradient(90deg,rgba(8,12,9,.77),rgba(8,12,9,.23) 65%,rgba(8,12,9,.05)),linear-gradient(0deg,rgba(8,12,9,.35),transparent 35%)}
 .hero-inner{position:relative;height:100%;display:flex;flex-direction:column;padding-block:2.8rem 2rem}
 .hero-copy{margin-block:auto;padding-block:4rem;max-width:60rem}
-.campaign-label,.location-label{text-transform:uppercase;font-size:.75rem;letter-spacing:.18em;line-height:1.5}
+.campaign-label{text-transform:uppercase;font-size:.75rem;letter-spacing:.18em;line-height:1.5}
 .campaign-label{color:var(--gold);margin-bottom:1.8rem}
 .hero-description{max-width:27rem;margin-top:2rem;color:#e9e1d6;font-size:1rem;line-height:1.8}
 .hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:1rem 2rem;margin-top:2.2rem}
@@ -57,7 +57,7 @@ em{font-weight:400}
 @media(hover:hover) and (pointer:fine){
   .button:hover:before{transform:translateY(0)}
   .button:hover .button-label{transform:translateX(-2px)}
-  .button:hover .button-mark svg{transform:rotate(90deg)}
+  .button:hover .button-mark svg{transform:scale(1.15)}
   .button-outline:hover{color:var(--forest)}
   .text-link:hover:after{transform:scaleX(.6)}
 }
@@ -93,7 +93,6 @@ em{font-weight:400}
 .restaurant-photo{overflow:hidden;aspect-ratio:4/5;background:#ded8cb}
 .restaurant-photo img{width:100%;height:112%;object-fit:cover;object-position:60% 50%}
 .restaurant-figure figcaption{font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;margin-top:1.2rem;color:var(--muted)}
-.location-label{color:var(--burgundy);margin-bottom:1.7rem}
 .restaurant-copy{max-width:26rem;margin:2rem 0 1.5rem;color:var(--muted);line-height:1.85}
 .final{position:relative;overflow:hidden;background:var(--forest);color:var(--cream);text-align:center;padding-block:clamp(6rem,12vw,12rem)}
 .final-inner{position:relative}
@@ -164,7 +163,6 @@ footer{background:#0b1c14;color:#d3d7cd;padding:2.5rem 0}
   .restaurant-figure{width:calc(100% - 1.5rem)}
   .restaurant-content{padding-left:1.5rem}
   .restaurant-copy{margin-top:1.5rem}
-  .location-label{margin-bottom:1.3rem;font-size:.7rem}
   .final{padding-block:6rem}
   .final h2{font-size:clamp(3.25rem,12vw,5rem)}
   .final .button{max-width:100%;justify-content:space-between;text-align:left}
