@@ -11,7 +11,7 @@
 - netlify.toml limitado a deploy-preview: dist/; produção segue a configuração existente.
 
 ## Pendente
-- Validação mobile, teclado e contraste completo ainda pendentes. Prévia Netlify aberta e Hero/cards revisados visualmente em desktop; espaçamento das ações do Hero corrigido.
+- Janela estreita de 388 CSS px e desktop de 1158px revisados, sem overflow horizontal. GSAP ScrollTrigger observado em scroll; cards e CTA retornam a opacity 1/transform none. Ainda pendentes: aparelho físico, preferência reduzida em execução, teclado completo e contraste sobre fotografia.
 - Lighthouse mobile/desktop, Core Web Vitals e validação externa de schema/OG.
 - Conversão de imagens e revisão de pesos de fonte após aprovação visual.
 - Revisão editorial, logo/favicon final e design definitivo do PDF.

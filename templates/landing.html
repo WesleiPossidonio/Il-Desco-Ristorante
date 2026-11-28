@@ -1,10 +1,68 @@
 <!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>{{title}}</title><meta name="description" content="{{description}}"><meta property="og:title" content="{{title}}"><meta property="og:description" content="{{description}}"><meta property="og:type" content="website"><meta property="og:locale" content="it_IT"><script type="application/ld+json">{{schema}}</script><meta name="theme-color" content="#10271d"><link rel="stylesheet" href="assets/style.css"></head>
-<body><a class="skip" href="#contenuto">Vai al contenuto</a>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <script type="application/ld+json">{{schema}}</script>
+  <meta name="theme-color" content="#10271d">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#contenuto">Vai al contenuto</a>
 <main id="contenuto">
-<section class="hero relative overflow-hidden" aria-labelledby="hero-title"><div class="hero-image">{{hero}}</div><div class="hero-shade"></div><div class="container hero-inner"><a class="brand" href="https://www.ildescopadova.com/it/home/">IL DESCO<span>RISTORANTE · PADOVA</span></a><div class="hero-copy"><p class="eyebrow">Cene aziendali · Natale 2026</p><h1 id="hero-title">{{heroTitle}}</h1><p class="hero-description">{{heroText}}</p><div class="hero-actions">{{heroContact}}<a class="text-link hero-explore" href="#esperienza">Scopri l’esperienza</a></div></div><p class="hero-caption">Il piacere di stare insieme.</p></div></section>
-<section id="esperienza" class="section cream"><div class="container editorial"><div><p class="eyebrow">Il piacere di ritrovarsi</p><h2>{{presentationTitle}}</h2></div><div class="editorial-copy"><p>{{presentationText}}</p><a class="text-link" href="#menu">Esplora le proposte</a></div></div></section>
-<section id="menu" class="section burgundy"><div class="container"><div class="section-heading"><div><p class="eyebrow">Le proposte di Natale</p><h2>A tavola,<br><em>il Natale.</em></h2></div><p>Il gusto di una serata condivisa.<br>Tre proposte per il tuo Natale aziendale.</p></div><div class="menus">{{menus}}</div><div class="menu-document"><p>Consulta il documento con tutte e tre le proposte.</p><div class="menu-document-actions"><a class="button" href="{{menuPdf}}" target="_blank" rel="noopener" data-menu-action="view">Visualizza i menu <span class="sr-only">(PDF, nuova scheda)</span></a><a class="text-link" href="{{menuPdf}}" download data-menu-action="download">Scarica i menu in PDF</a></div></div></div></section>
-<section class="section cream"><div class="container restaurant"><div class="restaurant-photo">{{restaurant}}</div><div><p class="eyebrow">Il ristorante</p><h2>Il piacere<br>di <em>ritrovarsi.</em></h2><p class="restaurant-copy">Il Desco, a Padova. Un tavolo intorno al quale incontrarsi e condividere il piacere della buona cucina.</p><a class="text-link" href="https://www.ildescopadova.com/it/home/">Scopri Il Desco</a></div></div></section>
-<section class="section final"><div class="container"><p class="eyebrow">Il tuo Natale, al Desco</p><h2>{{finalTitle}}</h2><p>Una serata da condividere.<br>Un momento da ricordare.</p>{{footerContact}}</div></section>
-</main><footer><div class="container footer-inner"><a class="brand" href="https://www.ildescopadova.com/it/home/">IL DESCO<span>RISTORANTE · PADOVA</span></a><p>Natale aziendale 2026</p><div><a href="https://www.iubenda.com/privacy-policy/75421557">Privacy</a><a href="https://www.iubenda.com/privacy-policy/75421557/cookie-policy">Cookie policy</a></div></div></footer></body></html>
+  <section class="hero relative overflow-hidden" aria-labelledby="hero-title">
+    <div class="hero-image">{{hero}}</div>
+    <div class="hero-shade"></div>
+    <div class="container hero-inner">
+      <a class="brand" href="https://www.ildescopadova.com/it/home/">IL DESCO<span>RISTORANTE · PADOVA</span></a>
+      <div class="hero-copy">
+        <p class="campaign-label">Cene aziendali · Natale 2026</p>
+        <h1 id="hero-title">{{heroTitle}}</h1>
+        <p class="hero-description">{{heroText}}</p>
+        <div class="hero-actions">{{heroContact}}<a class="text-link hero-explore" href="#esperienza">Scopri l’esperienza</a></div>
+      </div>
+      <div class="hero-bottom"><p>Il piacere di stare insieme.</p><a class="scroll-cue" href="#esperienza"><span>Scorri per scoprire</span><span class="scroll-line" aria-hidden="true"></span></a></div>
+    </div>
+  </section>
+
+  <section id="esperienza" class="experience section cream" aria-labelledby="experience-title">
+    <div class="container editorial">
+      <h2 id="experience-title" class="editorial-title">{{presentationTitle}}</h2>
+      <div class="editorial-copy"><p>{{presentationText}}</p><a class="text-link" href="#menu">Esplora le proposte</a></div>
+    </div>
+    <figure class="table-scene">
+      <div class="scene-image">{{table}}</div>
+      <figcaption><span>Il Desco</span><span>Il piacere di stare insieme.</span></figcaption>
+    </figure>
+  </section>
+
+  <section id="menu" class="section burgundy" aria-labelledby="menu-title">
+    <div class="container">
+      <div class="section-heading"><h2 id="menu-title">A tavola,<br><em>il Natale.</em></h2><div class="menu-intro"><p>Il gusto di una serata condivisa.<br>Tre proposte per il tuo Natale aziendale.</p><span class="section-rule" aria-hidden="true"></span></div></div>
+      <div class="menus">{{menus}}</div>
+      <div class="menu-document"><p>Consulta il documento<br>con tutte e tre le proposte.</p><div class="menu-document-actions"><a class="button button-outline" href="{{menuPdf}}" target="_blank" rel="noopener" data-menu-action="view"><span class="button-label">Visualizza i menu<span class="sr-only"> (PDF, nuova scheda)</span></span><span class="button-mark" aria-hidden="true">{{plusIcon}}</span></a><a class="text-link" href="{{menuPdf}}" download data-menu-action="download">Scarica i menu in PDF</a></div></div>
+    </div>
+  </section>
+
+  <section class="section cream restaurant-section" aria-labelledby="restaurant-title">
+    <div class="container restaurant">
+      <figure class="restaurant-figure"><div class="restaurant-photo">{{restaurant}}</div><figcaption>Il Desco · Padova</figcaption></figure>
+      <div class="restaurant-content"><h2 id="restaurant-title">Il piacere<br>di <em>ritrovarsi.</em></h2><p class="restaurant-copy">Il Desco, a Padova. Un tavolo intorno al quale incontrarsi e condividere il piacere della buona cucina.</p><a class="text-link" href="https://www.ildescopadova.com/it/home/">Scopri Il Desco</a></div>
+    </div>
+  </section>
+
+  <section class="section final" aria-labelledby="final-title">
+    <div class="container final-inner"><span class="final-rule" aria-hidden="true"></span><h2 id="final-title">{{finalTitle}}</h2><p>Una serata da condividere.<br>Un momento da ricordare.</p>{{footerContact}}<p class="final-signature">Il Desco · Padova · Natale 2026</p></div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><a class="brand" href="https://www.ildescopadova.com/it/home/">IL DESCO<span>RISTORANTE · PADOVA</span></a><p>Natale aziendale 2026</p><div><a href="https://www.iubenda.com/privacy-policy/75421557">Privacy</a><a href="https://www.iubenda.com/privacy-policy/75421557/cookie-policy">Cookie policy</a></div></div></footer>
+<script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

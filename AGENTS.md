@@ -12,7 +12,7 @@
 ## Design e conteúdo
 - Captura recebida em 27/11/2026. Responsável autorizou refinar o layout com direção UI/UX minimalista, mantendo identidade editorial e escopo.
 - Sem header convencional nem navegação sticky. Hero: “Il Natale si vive insieme.”
-- Cinco áreas: Hero, apresentação, dois menus oficiais, restaurante e CTA final verde profundo.
+- Cinco áreas: Hero, apresentação, três menus oficiais, restaurante e CTA final verde profundo.
 - Usar a imagem natalina aprovada no Hero, identificando sua natureza conceitual quando necessário; fotos oficiais para representar o espaço físico.
 - Não inventar menus, preços, pratos, telefone, endereço, diferenciais ou identificadores.
 - Confirmar logo atual: o PDF encontrado em logo vecchio não deve ser adotado automaticamente.
@@ -33,3 +33,7 @@
 - Canonical de produção somente após validar URL final. Nenhum segredo em arquivos públicos.
 - Documentar decisões e bloqueios; registrar somente testes e métricas realmente executados.
 - Lighthouse alvo: performance 90+, acessibilidade/boas práticas/SEO 95+; metas não são resultados.
+
+## Skills do projeto
+- Coleções indicadas pelo responsável instaladas em .agents/skills (locais); versões e fontes em docs/skills-lock.json.
+- Aplicar as skills relevantes mantendo briefing, stack e autorização da sessão como prioridade.
