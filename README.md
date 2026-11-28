@@ -4,7 +4,7 @@ Landing estática em desenvolvimento na branch feature/landing-natale-2026. Pág
 
 ## Desenvolvimento
 
-Node.js e npm. Execute `npm ci` e `npm run build`. O build gera `dist/index.html`, CSS Tailwind compilado e assets locais. A configuração atual da Netlify não foi alterada; o diretório de publicação ainda precisa ser confirmado antes do lançamento.
+Node.js e npm. Execute `npm ci`, `npm run build` e `npm run check`. O build gera `dist/index.html`, CSS Tailwind compilado e assets locais. A configuração atual da Netlify não foi alterada; o diretório de publicação ainda precisa ser confirmado antes do lançamento.
 
 Edite textos e configurações em `content/landing.json`, composição em `templates/landing.html` e estilos em `src/styles/input.css`. Fontes locais incluem a licença em `public/assets/fonts/OFL.txt`.
 
