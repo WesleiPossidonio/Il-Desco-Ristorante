@@ -6,6 +6,10 @@
 - git diff --check: sem erros de whitespace.
 - PDF copiado sem alteração e comparado ao original na etapa de integração.
 
+## Integração
+- GitHub Actions configurado para instalação limpa, build e check em PRs e pushes em main. Resultado remoto deve ser consultado no PR.
+- netlify.toml limitado a deploy-preview: dist/; produção segue a configuração existente.
+
 ## Pendente
 - Prévia no navegador: tentativa anterior falhou por timeout do relay; sem avaliação visual final de responsividade, contraste, teclado ou enquadramento.
 - Lighthouse mobile/desktop, Core Web Vitals e validação externa de schema/OG.
